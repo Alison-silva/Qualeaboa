@@ -36,8 +36,6 @@ public class HomeActivity extends AppCompatActivity {
     private ApiInterface apiInterface;
     ActivityHomeBinding binding;
 
-    //por enquanto apenas testes
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
