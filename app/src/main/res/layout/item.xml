@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_name"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/shadow_bottom"
+                android:src="@drawable/bottom_shadow"
+                android:layout_alignBottom="@id/img_name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/img_name"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:text="Nome "/>
+
+            <TextView
+                android:id="@+id/tv_introaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/tv_description"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:text="Local . "/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/tv_introaddress"
+                android:layout_below="@id/tv_description"
+                android:layout_marginTop="10dp"
+                android:text="Endereço "/>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/tv_name"
+                android:layout_marginRight="10dp"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:text="Descrição "/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

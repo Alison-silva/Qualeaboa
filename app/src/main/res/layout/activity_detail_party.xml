@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailPartyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_name"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/shadow_bottom"
+                android:src="@drawable/bottom_shadow"
+                android:layout_alignBottom="@id/img_name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+            <TextView
+                android:id="@+id/tv_party"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/img_name"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:text="Nome "/>
+
+            <TextView
+                android:id="@+id/tv_introlocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@id/tv_party"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:text="Endereço: "/>
+
+            <TextView
+                android:id="@+id/tv_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@id/tv_party"
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/tv_introlocal"
+                android:layout_marginTop="20dp"
+                android:text="Endereço: "/>
+
+            <TextView
+                android:id="@+id/tv_introtimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@id/tv_local"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:text="Horario: "/>
+
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@id/tv_local"
+                android:layout_toRightOf="@id/tv_introtimer"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:text="Horario: "/>
+
+            <TextView
+                android:id="@+id/tv_introday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@id/tv_introtimer"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:text="Dia: "/>
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@id/tv_introtimer"
+                android:layout_toRightOf="@id/tv_introday"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:text="Dia: "/>
+
+            <TextView
+                android:id="@+id/tv_introprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@id/tv_introday"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:text="Preco: "/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/tv_introprice"
+                android:layout_below="@id/tv_introday"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:text="Preco: "/>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@id/tv_price"
+                android:textSize="15sp"
+                android:layout_marginTop="25dp"
+                android:text="Descrição: "/>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
